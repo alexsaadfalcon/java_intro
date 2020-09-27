@@ -5,8 +5,6 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
-import java.awt.*;
-
 /**
  * The Dots class is a GUI which allows the user to add red, green, or blue
  * dots to a black screen. The user chooses the color of the Dot he or she
@@ -78,50 +76,10 @@ public class Dots extends Application {
      */
     public void start(Stage stage) {
         stage.setTitle("Dots!");
+        // TODO: Your code starts here
 
-        currentColor = Color.RED;
-        dotList = new SinglyLinkedList<>();
-        Group group = new Group();
-        Scene scene = new Scene(group, SIZE, SIZE);
-        scene.setFill(Color.BLACK);
 
-        scene.setOnKeyPressed(event -> {
-                switch (event.getCode()) {
-                case DIGIT1:
-                    currentColor = Color.RED;
-                    break;
-                case DIGIT2:
-                    currentColor = Color.BLUE;
-                    break;
-                case DIGIT3:
-                    currentColor = Color.GREEN;
-                    break;
-                default:
-                    break;
-                }
-            });
-
-        scene.setOnMouseClicked(event -> {
-                double x = event.getX();
-                double y = event.getY();
-                Dot toAdd = new Dot(x, y);
-                boolean dotRemoved = false;
-                for (int i = 0; i < dotList.size() && !dotRemoved; i++) {
-                    Dot toCheck = dotList.get(i);
-                    if (toAdd.contains(toCheck.getCenterX(),
-                            toCheck.getCenterY())) {
-                        dotList.remove(toCheck);
-                        group.getChildren().remove(toCheck);
-                        dotRemoved = true;
-                    }
-                } //Doesn't work because of error I couldnt fix in remove
-                if (!dotRemoved) {
-                    dotList.add(toAdd);
-                    group.getChildren().add(toAdd);
-                }
-            });
-        stage.setTitle("Dots!"); // Set the stage title
-        stage.setScene(scene); // Place the scene in the stage
+        // Your code ends here
         stage.show(); // makes the window visible to the user
     }
 
