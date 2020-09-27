@@ -1,6 +1,8 @@
 import os, sys, shutil
 
-docdir = 'javadocs/'
+docdir = 'docs/'
+if not os.path.isdir(docdir):
+    os.mkdir(docdir)
 
 for n in range(1, 10):
     hwdir = f'hw{str(n).zfill(2)}'
@@ -14,5 +16,5 @@ for n in range(1, 10):
 
     shutil.move(f'{hwdir}/{hwdir}docs', f'{docdir}/')
 
-    # os.system(f'git add {docdir}/{hwdir}docs')
-    # os.system(f'git commit -m"Javadocs for homework {n}"')
+    #os.system(f'git add {docdir}/{hwdir}docs')
+    #os.system(f'git commit -m"Javadocs for homework {n}"')
