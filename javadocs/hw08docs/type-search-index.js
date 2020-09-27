@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"<Unnamed>","l":"Adventure"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"Driver"},{"p":"<Unnamed>","l":"PartyIsFullException"},{"p":"<Unnamed>","l":"PokemonAlreadyExistsException"},{"p":"<Unnamed>","l":"UnknownRegionException"}]
