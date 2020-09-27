@@ -1,0 +1,46 @@
+1. The code did not compile because there was a mismatch between the name of the file and the name of the public class. These two have to match verbatim.
+
+GTBuzz.java:1: error: class GTbuzz is public, should be declared in a file named
+ GTbuzz.java
+
+2. The code compiles, but doesn't run all the way through because it divides by 0, which Java won't calculate. Fix by not doing that.
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at GTBuzz.main(GTBuzz.java:5)
+
+3. The code doesn't compile because there is no object calling the method println, which doesn't work because println is not a static method. There has to be an object calling it.
+
+GTBuzz.java:4: error: cannot find symbol
+                println("I'm a ramblin' wreck from Georgia Tech!");
+                ^
+  symbol:   method println(String)
+  location: class GTBuzz
+
+4. The code doesn't compile. Without a closed string, the compiler interprets several things as lines in code rather than part of a string, resulting in several errors. Fix by closing the string.
+
+GTBuzz.java:4: error: unclosed character literal
+                System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+                                    ^
+GTBuzz.java:4: error: unclosed character literal
+                System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+                                                ^
+GTBuzz.java:4: error: ';' expected
+                System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+                                                            ^
+GTBuzz.java:4: error: ';' expected
+                System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+                                                                         ^
+GTBuzz.java:4: error: unclosed string literal
+                System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+
+5. The code compiles and runs without an error.
+
+6. The code doesn't compile because Java needs a semicolon at the end of each line to discern between different lines of code. It doesn't use spacing. Fix by adding ;
+
+GTBuzz.java:4: error: ';' expected
+                System.out.println("I'm a ramblin' wreck from Georgia Tech!")
+
+7. The code did not compile because Java uses curly braces as start and stop points, so without another curly brace, the compiler stopped reading at the end of the file while still expecting more code.
+
+GTBuzz.java:5: error: reached end of file while parsing
+        } //End of main method
