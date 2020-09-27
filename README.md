@@ -14,6 +14,13 @@ javac Test.java
 java Test
 ```
 
+## Run Javadoc
+
+To run checkstyle simply run the following in the terminal
+```bash
+javadoc *.java -d javadoc
+```
+
 ## Run Checkstyle
 
 To run checkstyle simply run the following in the terminal
