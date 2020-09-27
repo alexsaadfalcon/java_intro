@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"<Unnamed>","c":"CrazyCipher","l":"CrazyCipher()","url":"%3Cinit%3E()"},{"p":"<Unnamed>","c":"CrazyCipher","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"StringConversion","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"StringConversion","l":"StringConversion()","url":"%3Cinit%3E()"}]

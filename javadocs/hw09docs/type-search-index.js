@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"<Unnamed>","l":"ExtendedSet"},{"p":"<Unnamed>","l":"GenericSet"},{"p":"<Unnamed>","l":"GenericTuple"},{"p":"<Unnamed>","l":"LFilter"},{"p":"<Unnamed>","l":"LMap"},{"p":"<Unnamed>","l":"LReduce"},{"p":"<Unnamed>","l":"SetTest"},{"p":"<Unnamed>","l":"Tuple"}]
