@@ -2,7 +2,7 @@
 Intro to Java Homework and Tests
 
 ## Javadocs Link
-I compiled the docs for hw01-hw09 and put them [here](alexsaadfalcon.github.io/java_intro). hw10 is broken since JavaFX is not part of the JRE/JDK anymore. 
+I compiled the docs for hw01-hw09 and put them [here](https://alexsaadfalcon.github.io/java_intro/)
 
 ## Run Homework/Test
 There is a PDF in each directory describing the problem.
