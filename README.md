@@ -1,7 +1,7 @@
 # java_intro
 Intro to Java Homework and Tests
 
-## Javadocs Link
+## [Javadocs Link](https://alexsaadfalcon.github.io/java_intro/)
 I compiled the docs for hw01-hw09 and put them [here](https://alexsaadfalcon.github.io/java_intro/)
 
 ## Run Homework/Test
